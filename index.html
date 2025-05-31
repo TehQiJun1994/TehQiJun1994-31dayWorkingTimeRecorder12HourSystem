@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>31天工作时间记录器（12小时制）</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./日历矢量 png.png" type="image/x-icon">
+</head>
+<body>
+  <h2>31天工作时间记录（12小时制 AM/PM）</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>日期</th>
+        <th>上班</th>
+        <th>下班</th>
+        <th>工时</th>
+        <th>加班</th>
+      </tr>
+    </thead>
+    <tbody id="workTable"></tbody>
+  </table>
+
+  <div class="button-container">
+        <button onclick="calculateAll()">CalculateAll</button>
+        <button onclick="saveData()">SaveData</button>
+        <button onclick="loadData()">LoadData</button>
+        <button onclick="exportCSV()">ExportCS</button>
+  </div>
+
+  <p id="summary">总工作时长：0 H 0 M，其中加班：0 H 0 M，共 0 天加班</p>
+
+  <script src="./app.js"></script>
+</body>
+</html>
